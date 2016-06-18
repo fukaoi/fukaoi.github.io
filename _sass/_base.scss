@@ -210,6 +210,14 @@ pre {
     }
 }
 
+/**
+ * Image radius
+ */
+ .image img{
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+ }
 
 /**
  * Clearfix

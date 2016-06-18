@@ -3,8 +3,10 @@ layout: page
 title: about
 permalink: /about/
 ---
-
-<img class="col right" src="/img/prof_pic.png" style="width:50%">
+<div class="image">
+	<img class="col right" src="/img/prof_pic.png" style="width:50%">
+</div>
+	
 I'm web and mobile engineer.Live in Tokyo Japan.
 
 <br />
