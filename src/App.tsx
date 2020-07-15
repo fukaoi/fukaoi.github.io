@@ -25,7 +25,14 @@ function App() {
         <div className="space" />
 
         <h2>Generate Stellar Keypair</h2>
-        <input size={60} maxLength={64} type="text" name="hex" value={hex} placeholder="e.g: Hex 64byte string" />
+        <input
+          size={60}
+          maxLength={64}
+          type="text"
+          name="hex"
+          value={hex}
+          placeholder="e.g: Hex 64byte string"
+        />
         <button onClick={() => handleKeypairGen(hex)}>Generate</button>
         <p>pubkey: {keypair.pubkey}</p>
         <p>secret: {keypair.secret}</p>
