@@ -51,7 +51,7 @@ function App() {
 
         <h2>Source code</h2>
         <a
-          href="https://github.com/fukaoi/fukaoi.github.io/blob/master/src/generateKeypair.ts#L5"
+          href="https://github.com/fukaoi/fukaoi.github.io/blob/feature/source/src/generateKeypair.ts#L5"
           target="_blank"
           rel="noopener noreferrer"
         >
