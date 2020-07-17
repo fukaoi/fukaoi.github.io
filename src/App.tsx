@@ -7,14 +7,19 @@ function App() {
   const [hex, setHex] = useState('');
   const [value, setValue] = useState('');
   const [keypair, setKeypair] = useState({pubkey: '', secret: ''});
-  const handleHexGen = () =>
-    setHex(cryptoRandomString({length: 64}));
+  const handleHexGen = () => {
+    const hex = cryptoRandomString({length: 64});
+    setHex(hex);
+    setValue(hex);
+  }
+
+  const handleInputType = (event: any) => 
+    setValue(event.target.value);
 
   const handleKeypairGen = (seed: string) => {
     setValue(seed);
     setKeypair(generateKeypair(seed));
   }
-
 
   return (
     <div className="App">
@@ -36,6 +41,7 @@ function App() {
           name="hex"
           value={value}
           placeholder="e.g: Hex 64byte string"
+          onChange={handleInputType}
         />
         <button onClick={() => handleKeypairGen(value)}>Generate</button>
         <p>pubkey: {keypair.pubkey}</p>
